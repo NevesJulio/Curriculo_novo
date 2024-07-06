@@ -17,16 +17,17 @@ contact_info = [[
 
 
 content1 = [
-    ["Formação Acadêmica","Engenharia Biomédica - UFRN -\n 7º período (Previsão de Conclusão: 2025)","Bacharelado em Ciência e Tecnologia\n- UFRN - Conclusão: 2021", "Curso de python - Udemy - Conclusão: 2022", "Curso de API - Udemy - Conclusão: 2022"]
+    ["Formação Acadêmica","Engenharia Biomédica - UFRN -\n 7º período (Previsão de Conclusão: 2025).","Bacharelado em Ciência e Tecnologia\n- UFRN - Conclusão: 2021."],
+    ["Cursos", "Curso de python - Udemy - Conclusão: 2022.", "Curso de API - Udemy - Conclusão: 2022."]
 ]
 content2 = [
     ["Áreas de interesse", "Tenho o objetivo de me aprofundar mais\nem conhecimentos práticos nas áreas de\nEletrônica, assim como em programação,\nprincipalmente em python e C++."]
     
 ]
 content3 = [
-    ["Experiência","Monitoria - UFRN -\nCálculo III - 2022.2\nFísica Experimental II - 2023.1/2023.2\nEletricidade Aplicada - 2024.1","Auxílio aos alunos em suas dúvidas e\ndificuldades nas disciplinas.","Preparação de materiais didáticos\ne suporte ao professor na correção de\nexercícios e provas.","Iniciação Científica - Instituto Santos Drumond -\nAuxílio no desenvolvimento de projeto de\npesquisa voltados para a área de robótica e\nprogramção"],
-    ["Habilidades Técnicas","Python, C++, C#, HTML, CSS","Ferramentas de Desenvolvimento:\n[IDE's, plataformas de desenvolvimento, etc.]"],
-    ["Idiomas","Inglês Fluente"]
+    ["Experiência","Monitoria - UFRN -\nCálculo III - 2022.2.\nFísica Experimental II - 2023.1/2023.2.\nEletricidade Aplicada - 2024.1.","Auxílio aos alunos em suas dúvidas e\ndificuldades nas disciplinas.","Auxílio dos alunos em atividades de eletrônica,\ncircuitos e microcontroladores.","Iniciação Científica - Instituto Santos Drumond -\nAuxílio no desenvolvimento de projeto de\npesquisa voltados para a área de robótica e\nprogramação."],
+    ["Habilidades Técnicas","Python, C++, C#, HTML, CSS.","Eletrônica e Microcontroladores."],
+    ["Idiomas","Inglês Fluente."]
 ]
 
 
@@ -113,9 +114,9 @@ cnv.setFillColorRGB(115/255, 69/255, 85/255)
 cnv.drawString(posicao0[0]+260,posicao0[1]-80, splitar[1])
 
 #Declaração
-cnv.setFont("Helvetica-Bold", 10)
+cnv.setFont("Helvetica-Bold", 7)
 cnv.setFillColorRGB(0, 0, 0)
-cnv.drawString(posicao0[0]+240,posicao0[1]-815, "*Todo esse documento Foi gerado por mim em um código python")
+cnv.drawString(posicao0[0]+235,posicao0[1]-815, "*Este documento foi gerado por meio de um código Python desenvolvido por Júlio Cesar Neves.")
 
 #Exibir conteúdo
 Exibir_Ponto(content1, posicao1, 11)
@@ -124,14 +125,15 @@ Exibir_Ponto(content3, posicao4_copia, 14)
 cnv.setFillColorRGB(0.9, 0.9, 0.9)
 cnv.circle(posicao0[0]+30, posicao0[1]-30,75, fill = 1, stroke = 0)
 cnv.drawImage(fr"C:\Users\Julio\Desktop\CoisasCesar\Minhas fotos\OIG.png", posicao0[0]+30, posicao0[1]-170,150, 150, mask = 'auto')
+cnv.drawImage(fr"C:\Users\Julio\Desktop\Programacao\Currículo\icones\perfil.png", posicao0[0]-20, posicao0[1]-177,206, 156, mask = 'auto')
 
 #Contatos
 for i in range(len(contact_info[0])):
     print(i)
     cnv.setFillColorRGB(0, 0, 0)
     cnv.setFont("Helvetica-Bold", 12)
-    cnv.drawString(posicao4[0], posicao1[1]-180-20*i, contact_info[0][i])
-    cnv.drawImage(rf"C:\Users\Julio\Desktop\Programacao\Currículo\icones\img{i}.png",posicao4[0]-25, posicao1[1]-185-20*i, 15, 15, mask = 'auto')
+    cnv.drawString(posicao4[0], posicao1[1]-130-20*i, contact_info[0][i])
+    cnv.drawImage(rf"C:\Users\Julio\Desktop\Programacao\Currículo\icones\img{i}.png",posicao4[0]-25, posicao1[1]-135-20*i, 15, 15, mask = 'auto')
 
 
 
