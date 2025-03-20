@@ -2,8 +2,8 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from fpdf import FPDF
 
-#caminho_pdf = r"C:\Users\Julio\Desktop\MeuCurrículo2.pdf"
-cnv = canvas.Canvas(MeuCurrículo2.pdf)
+caminho_pdf = r"C:\Users\gabriele.rocha.110\MeuCurrículo2.pdf"
+cnv = canvas.Canvas(caminho_pdf)
 largura_A4, altura_A4 = A4
 
 # Dados pessoais
