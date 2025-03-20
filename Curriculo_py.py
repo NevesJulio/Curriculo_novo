@@ -2,8 +2,8 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from fpdf import FPDF
 
-
-cnv = canvas.Canvas("MeuCurrículo.pdf")
+caminho_pdf = r"C:\Users\Julio\Desktop\MeuCurrículo2.pdf"
+cnv = canvas.Canvas(caminho_pdf)
 largura_A4, altura_A4 = A4
 
 # Dados pessoais
@@ -113,10 +113,6 @@ cnv.drawString(posicao0[0]+260,posicao0[1]-50, splitar[0])
 cnv.setFillColorRGB(115/255, 69/255, 85/255)
 cnv.drawString(posicao0[0]+260,posicao0[1]-80, splitar[1])
 
-#Declaração
-cnv.setFont("Helvetica-Bold", 7)
-cnv.setFillColorRGB(0, 0, 0)
-cnv.drawString(posicao0[0]+235,posicao0[1]-815, "*Este documento foi gerado por meio de um código Python desenvolvido por Júlio Cesar Neves.")
 
 #Exibir conteúdo
 Exibir_Ponto(content1, posicao1, 11)
