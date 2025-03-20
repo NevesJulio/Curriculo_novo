@@ -17,16 +17,16 @@ contact_info = [[
 
 
 content1 = [
-    ["Formação Acadêmica","Engenharia Biomédica - UFRN -\n 7º período (Previsão de Conclusão: 2025).","Bacharelado em Ciência e Tecnologia\n- UFRN - Conclusão: 2021."],
+    ["Formação Acadêmica","Engenharia Biomédica - UFRN -\n 8º período (Previsão de Conclusão: 2025)."],
     ["Cursos", "Curso de python - Udemy - Conclusão: 2022.", "Curso de API - Udemy - Conclusão: 2022."]
 ]
 content2 = [
-    ["Áreas de interesse", "Tenho o objetivo de me aprofundar mais\nem conhecimentos práticos nas áreas de\nEletrônica, assim como em programação,\nprincipalmente em python e C++."]
+    ["Áreas de interesse", "Tenho o objetivo de me aprofundar mais\nem conhecimentos práticos nas áreas de\nprogramação, principalmente em Python\ne C++. Assim pretendo melhorar ainda\nmais minhas habilidades."]
     
 ]
 content3 = [
-    ["Experiência","Monitoria - UFRN -\nCálculo III - 2022.2.\nFísica Experimental II - 2023.1/2023.2.\nEletricidade Aplicada - 2024.1.","Auxílio aos alunos em suas dúvidas e\ndificuldades nas disciplinas.","Auxílio dos alunos em atividades de eletrônica,\ncircuitos e microcontroladores.","Iniciação Científica - Instituto Santos Drumond -\nAuxílio no desenvolvimento de projeto de\npesquisa voltados para a área de robótica e\nprogramação."],
-    ["Habilidades Técnicas","Python, C++, C#, HTML, CSS.","Eletrônica e Microcontroladores."],
+    ["Experiência","Monitoria - UFRN -\nCálculo III - 2022.2.\nFísica Experimental II - 2023.1/2023.2.\nEletricidade Aplicada - 2024.1.","Atendimento aos alunos em suas dúvidas e\ndificuldades nas disciplinas.","Auxílio dos alunos em atividades de eletrônica,\ncircuitos e microcontroladores.","Iniciação Científica - Instituto Santos Drumond -\nAuxílio no desenvolvimento de projeto de\npesquisa voltado para a área de robótica e\nprogramação."],
+    ["Habilidades Técnicas","Python - Manipulação e Processamento de dados,\nAutomação de tarefas, Computação numérica,\nsimulação robótica.\n\nC++ - Sistemas embarcados em microcontroladores\n\nC#/Unity - Desenvolvimento de jogos sérios.\n\nHTML/CSS - Criação de Interfaces gráficas.","Eletrônica e Microcontroladores."],
     ["Idiomas","Inglês Fluente."]
 ]
 
@@ -44,7 +44,7 @@ posicao4_copia = [280, altura_A4-140]
 
 #Cor do fundo
 cnv.setFillColorRGB(0.9, 0.9, 0.9)
-cnv.rect(0,0,largura_A4,altura_A4, fill=True, stroke = 0)
+cnv.rect(0,  0,largura_A4,altura_A4, fill=True, stroke = 0)
 
 #Cor do retangulo
 cnv.setFillColorRGB(115/255, 69/255, 85/255)
@@ -121,10 +121,9 @@ cnv.drawString(posicao0[0]+235,posicao0[1]-815, "*Este documento foi gerado por 
 #Exibir conteúdo
 Exibir_Ponto(content1, posicao1, 11)
 Exibir_Sem(content2, posicao1)
-Exibir_Ponto(content3, posicao4_copia, 14)
+Exibir_Ponto(content3, posicao4_copia, 13)
 cnv.setFillColorRGB(0.9, 0.9, 0.9)
 cnv.circle(posicao0[0]+30, posicao0[1]-30,75, fill = 1, stroke = 0)
-cnv.drawImage(fr"C:\Users\Julio\Desktop\CoisasCesar\Minhas fotos\OIG.png", posicao0[0]+30, posicao0[1]-170,150, 150, mask = 'auto')
 cnv.drawImage(fr"C:\Users\Julio\Desktop\Programacao\Currículo\icones\perfil.png", posicao0[0]-20, posicao0[1]-177,206, 156, mask = 'auto')
 
 #Contatos
